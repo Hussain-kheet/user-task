@@ -1,0 +1,27 @@
+<div id="loader-page" *ngIf="loaderPage">
+  <div class="loader"></div>
+</div>
+<div class="form-group mt-5">
+  <!--    <input type="text" class="form-control" placeholder="Enter User ID" id="email" autocomplete="off"
+     [(ngModel)]="filterName"> -->
+
+</div>
+<table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of userData | search:filterName " routerLink="/details/{{item.id}}">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.first_name}}</td>
+      <td>{{item.last_name}}</td>
+      <td><img [src]="item.avatar" alt=""></td>
+    </tr>
+
+  </tbody>
+</table>

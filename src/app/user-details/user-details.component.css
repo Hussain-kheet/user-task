@@ -1,0 +1,25 @@
+img {
+  border-radius: 20px;
+}
+li {
+  color: #5e1616;
+  font-size: 30px;
+  margin: 20px 0;
+  letter-spacing: 3px;
+}
+span {
+  color: #ebe9e9;
+  font-size: 25px;
+  font-weight: 600;
+}
+.back {
+  text-align: right;
+}
+button {
+  color: #fff;
+  background-color: #5e1616;
+}
+button:hover {
+  background-color: #ebe9e9;
+  color: #5e1616;
+}

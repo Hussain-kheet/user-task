@@ -1,0 +1,16 @@
+.navbar-brand {
+  color: #fff;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fff;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.change {
+  border-bottom: 1px solid #8f7b7b;
+}
+.navbar {
+  background-color: #12141a;
+}

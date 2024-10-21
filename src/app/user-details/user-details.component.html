@@ -1,0 +1,25 @@
+<div id="loader-page" *ngIf="loaderPage">
+  <div class="loader"></div>
+</div>
+<div class="all mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="w-75" [src]="detailsProduct.avatar" alt="">
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>ID : <span>{{detailsProduct.id}}</span>
+          </li>
+          <li>First Name : <span>{{detailsProduct.first_name}}</span></li>
+          <li>Last Name : <span>{{detailsProduct.last_name}}</span></li>
+          <li>Email :<span>{{detailsProduct.email}}</span></li>
+        </ul>
+      </div>
+      <div class="back col-md-12 mt-5">
+        <button type="button" (click)="goBack()" class="btn ">Back</button>
+
+      </div>
+    </div>
+  </div>
+</div>
